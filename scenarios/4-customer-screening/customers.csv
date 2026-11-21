@@ -1,0 +1,31 @@
+customer_id,type,name,date_of_birth,incorporated,country,city,occupation_or_business,beneficial_owner
+C-1001,individual,Anita Deshpande,1984-04-12,,Orlandia,Northport,Software engineer,
+C-1002,company,Brookline Packaging Ltd,,2009,Orlandia,Eastvale,Packaging manufacturer,Samuel Okoye (born 1973-08-19)
+C-1003,individual,Carla Mendes,1991-01-30,,Orlandia,Marlow,Nurse,
+C-1004,individual,Pradeep Nambiar,1978-11-23,,Orlandia,Northport,Architect,
+C-1005,company,Hollis & Reed Consulting LLP,,2015,Orlandia,Northport,Management consulting,Fiona Hollis (born 1981-05-05)
+C-1006,individual,Yusuf Karaman,1969-07-08,,Zendavia,Lormund,Importer,
+C-1007,individual,Ravil Imanov,1971-03-14,,Karvonia,Dravsk,Commodity trader,
+C-1008,individual,Grace Adeyemi,1995-02-17,,Tessara,Port Kell,Student,
+C-1009,individual,Marcus Lindqvist,1979-02-11,,Orlandia,Eastvale,Dentist,
+C-1010,company,Nordlicht Logistics GmbH,,2012,Zendavia,Lormund,Freight forwarding,Katja Brandt (born 1975-12-01)
+C-1011,individual,Rafael Costa,1983-09-09,,Orlandia,Marlow,Chef,
+C-1012,company,Silvermoor Retail Ltd,,2018,Orlandia,Marlow,Retail,Imran Sheikh (born 1986-03-27)
+C-1013,individual,Muhammad Al Rashidi,1965-09-02,,Tessara,Port Kell,Property developer,
+C-1014,individual,Olivia Park,1999-06-14,,Orlandia,Northport,Designer,
+C-1015,individual,Tanvi Joshi,1987-10-28,,Orlandia,Eastvale,Doctor,
+C-1016,company,Blue Harbour Foods Pvt Ltd,,2005,Tessara,Port Kell,Food processing,Abena Mensah (born 1968-04-04)
+C-1017,individual,Henrik Solberg,1974-12-19,,Orlandia,Marlow,Pilot,
+C-1018,individual,Priya Raman,1990-03-03,,Orlandia,Marlow,Accountant,
+C-1019,individual,Daniel Okafor,1982-05-25,,Orlandia,Northport,Engineer,
+C-1020,company,Brightfield Textiles Ltd,,2001,Orlandia,Eastvale,Textile exporter,Naveen Gupta (born 1970-09-15)
+C-1021,individual,John Mercer,1988-07-21,,Orlandia,Northport,Marketing manager,
+C-1022,individual,Sofia Almeida,1993-08-08,,Orlandia,Marlow,Lawyer,
+C-1023,individual,Ethan Walsh,1976-01-16,,Orlandia,Eastvale,Teacher,
+C-1024,individual,Kavita Menon,1980-06-06,,Orlandia,Northport,Pharmacist,
+C-1025,company,Atlas Ridge Mining Ltd,,2011,Zendavia,Lormund,Mining services,Piotr Nowak (born 1964-02-09)
+C-1026,individual,Elena Voskresenskaya,,,Karvonia,Dravsk,Interior designer,
+C-1027,individual,Jamal Hussein,1985-04-01,,Orlandia,Eastvale,Taxi owner,
+C-1028,individual,Mei Lin Tan,1972-11-11,,Orlandia,Northport,Restaurant owner,
+C-1029,company,Corbel Energy Solutions Ltd,,2016,Orlandia,Marlow,Solar installer,Rhea Dsouza (born 1989-09-30)
+C-1030,company,Tessara Marine Holdings Ltd,,2008,Tessara,Port Kell,Shipping,Tomas Brandl (born 1960-01-12)

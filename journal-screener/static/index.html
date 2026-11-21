@@ -1,0 +1,186 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Journal Entry Screener</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+:root{--ink:#1b2432;--mute:#5d6b80;--line:#e3e7ee;--bg:#f3f5f8;--brand:#1f4fbf;--hi:#c0392b;--med:#c27803;--lo:#5d6b80;--ok:#1d7a46}
+*{box-sizing:border-box}
+body{font:14px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif;margin:0;background:var(--bg);color:var(--ink)}
+header{background:var(--ink);color:#fff;padding:14px 28px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+header h1{margin:0;font-size:18px;font-weight:650}header p{margin:2px 0 0;color:#a9b4c6;font-size:12px}
+.pill-note{background:#2b3a52;color:#cfe0ff;font-size:12px;padding:5px 12px;border-radius:14px}
+main{max-width:1320px;margin:18px auto 40px;padding:0 20px}
+.panel{background:#fff;border-radius:10px;box-shadow:0 1px 2px rgba(20,30,50,.06);padding:14px 18px;margin-bottom:14px}
+.bar{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.bar label{font-size:12px;color:var(--mute);display:flex;gap:6px;align-items:center}
+input[type=text],input[type=search]{border:1px solid #c9d0dc;border-radius:6px;padding:6px 9px;font:inherit}
+.bar input[type=text]{width:96px}
+button{font:inherit;background:var(--brand);color:#fff;border:0;border-radius:6px;padding:7px 15px;cursor:pointer;font-weight:600}
+button:hover{filter:brightness(1.1)}button.sec{background:#e6eaf1;color:var(--ink)}button:disabled{opacity:.45;cursor:default}
+.sp{flex:1}
+#err{background:#fde8e6;color:#8a1f12;padding:10px 14px;border-radius:8px;display:none;margin-bottom:14px}
+.kpis{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:14px}
+.kpi{background:#fff;border-radius:10px;padding:10px 16px;box-shadow:0 1px 2px rgba(20,30,50,.06)}
+.kpi b{display:block;font-size:24px;line-height:1.2}.kpi span{color:var(--mute);font-size:12px}
+.start{border-left:6px solid var(--brand)}
+.start h2{margin:0 0 6px;font-size:15px}.start ol{margin:0 0 8px 20px;padding:0}.start li{margin:4px 0;font-size:14.5px}
+.fine{font-size:12px;color:var(--mute)}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.chip{font-size:11.5px;padding:2px 9px;border-radius:12px;background:#e8f5ee;color:var(--ok);font-weight:600}.chip.bad{background:#fde8e6;color:var(--hi)}.chip.plain{background:#eef1f6;color:var(--mute)}
+.tools{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:10px}
+.seg button{background:#e6eaf1;color:var(--ink);border-radius:0;padding:6px 14px;font-weight:600}
+.seg button:first-child{border-radius:6px 0 0 6px}.seg button:last-child{border-radius:0 6px 6px 0}
+.seg button.on{background:var(--ink);color:#fff}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 1px 2px rgba(20,30,50,.06)}
+thead th{background:var(--ink);color:#fff;text-align:left;padding:9px 12px;font-size:12px;font-weight:600;letter-spacing:.2px;white-space:nowrap}
+th.r,td.r{text-align:right}
+td{padding:9px 12px;border-top:1px solid var(--line);vertical-align:middle}
+tr.grp td{background:#eaf0fb;font-weight:600;border-top:2px solid #b9c8e6;font-size:13px}
+tr.row{cursor:pointer}tr.row:hover td{background:#f7f9fd}tr.row.open td{background:#f0f4fc}
+tr.row td.num{color:var(--mute);font-weight:600;width:44px}
+.pri{display:inline-block;font-size:11.5px;font-weight:700;padding:2px 10px;border-radius:12px;color:#fff}
+.pri.High{background:var(--hi)}.pri.Medium{background:var(--med)}.pri.Lower{background:var(--lo)}
+.eid{font-weight:700}.line{font:11px ui-monospace,Menlo,monospace;color:var(--mute);margin-left:6px}
+.desc{font-size:12.5px;color:var(--mute);max-width:360px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nw{white-space:nowrap}
+.tb{display:inline-block;font-size:11.5px;font-weight:700;padding:2px 7px;border-radius:5px;background:#e8edf7;color:#274690;margin:1px 3px 1px 0;border:1px solid #cfd9ee}
+.tb.kw{background:#fff7e3;color:#8a5a00;border:1px dashed #d9a93a}
+.warnicon{color:#b26b00;font-weight:700;margin-left:6px}
+.chev{color:var(--mute);width:28px;text-align:center}
+tr.det td{background:#f7f9fd;padding:14px 18px 18px 56px}
+tr.det[hidden]{display:none}
+.dg{display:grid;grid-template-columns:1.7fr 1fr;gap:26px}.tcard{background:#fff;border:1px solid var(--line);border-left:4px solid var(--brand);border-radius:6px;padding:9px 12px;margin-bottom:10px;transition:background .3s}.tcard.hl{background:#fff4c9;border-left-color:#e0a82e}.tcard.dim{opacity:.55}.th2{display:flex;gap:8px;align-items:center;margin-bottom:6px}.th2 .t{font-weight:650}.lab{font-size:10.5px;text-transform:uppercase;letter-spacing:.5px;color:var(--mute);margin:6px 0 2px}.qa{background:#eaf1ff;border-radius:5px;padding:6px 10px}.gap{margin-top:14px!important}.tb{cursor:pointer}table.mini{width:100%;box-shadow:none;border-radius:0;font-size:12px;margin:2px 0 4px}table.mini th{background:#eef1f6;color:var(--ink);padding:4px 8px}table.mini td{padding:4px 8px;white-space:nowrap}table.mini td:last-child{white-space:normal;color:var(--mute)}
+.dg h4{margin:0 0 6px;font-size:11.5px;text-transform:uppercase;letter-spacing:.5px;color:var(--mute)}
+.ev{margin-bottom:9px}.ev .t{font-weight:650}.ev .k{font-size:11px;color:var(--mute);margin-left:6px}
+.ev code{display:block;font:12px ui-monospace,Menlo,monospace;background:#fff;border:1px solid var(--line);border-radius:5px;padding:4px 8px;margin-top:3px;word-break:break-word}
+.qs{margin:0;padding:0;list-style:none}.qs li{background:#eaf1ff;border-radius:6px;padding:7px 11px;margin-bottom:7px}
+.facts{margin:0;padding-left:18px;font-size:13px}.facts li{margin-bottom:3px}
+.full{font-size:12.5px;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:6px;padding:6px 10px;margin-bottom:10px}
+.warn{background:#fff1d6;border:1px solid #e0a82e;border-radius:6px;padding:7px 11px;margin-bottom:10px;font-size:13px;color:#5e3d00}
+.nt h2{margin:0 0 6px;font-size:15px}.nt{background:#fff8e6;border-left:6px solid #e0a82e}.nt ul{margin:6px 0 0 18px;padding:0}.nt li{margin-bottom:3px}
+.warnbox{background:#fff1d6;border:1px solid #e0a82e;border-radius:6px;padding:8px 12px;margin:0 0 8px;color:#5e3d00;font-weight:600}.inj{border-left:6px solid #e0a82e;background:#fffaf0}.inj h2{margin:0 0 6px;font-size:15px}.inj ul{margin:6px 0 0 18px;padding:0}.inj li{margin-bottom:4px}.empty{padding:40px;text-align:center;color:var(--mute)}
+@media(max-width:900px){.kpis{grid-template-columns:repeat(2,1fr)}.dg{grid-template-columns:1fr}}
+</style>
+<header>
+ <div><h1>Journal Entry Screener</h1><p>Halvorsen Industrial Group · FY2026 · Q3 interim · manual journal entries</p></div>
+ <div class="pill-note">Screening aid only: every flag requires follow-up · a person decides · nothing is cleared by this tool</div>
+</header>
+<main>
+ <div class="panel bar">
+  <input type="file" id="file" accept=".csv">
+  <label>Locked period <input type="text" id="lp" value="2026-09"></label>
+  <label>Lock date <input type="text" id="ld" value="2026-10-09"></label>
+  <button id="run">Screen file</button><button class="sec" id="sample">Use sample data</button>
+  <span class="sp"></span><button class="sec" id="exp" disabled>Export CSV</button>
+ </div>
+ <div id="err"></div>
+ <div id="out" hidden>
+  <div class="kpis" id="kpis"></div>
+  <div class="panel start" id="start"></div>
+  <div class="panel inj" id="inj" hidden></div>
+  <div class="tools">
+   <div class="seg" id="seg"></div>
+   <input type="search" id="q" placeholder="Search entry id, supplier, description…" size="34">
+   <span class="sp"></span><button class="sec" id="tog">Expand all</button>
+  </div>
+  <div id="tbl"></div>
+  <div class="panel nt" id="nt"></div>
+ </div>
+ <div class="panel empty" id="hint">Choose a journal-entry CSV and press <b>Screen file</b>, or press <b>Use sample data</b>.</div>
+</main>
+<script>
+const $=id=>document.getElementById(id);let last=null,filt="All",allOpen=false;
+// All text goes in via textContent: descriptions are written by other people and are never trusted as HTML.
+function el(tag,cls,txt){const e=document.createElement(tag);if(cls)e.className=cls;if(txt!=null)e.textContent=txt;return e}
+const num=v=>Number(v).toLocaleString("en-US");
+const qs=()=>"?lockPeriod="+encodeURIComponent($("lp").value)+"&lockDate="+encodeURIComponent($("ld").value);
+function showErr(m){$("err").textContent=m;$("err").style.display="block"}
+async function go(p){$("err").style.display="none";
+ try{const r=await p;const d=await r.json();if(d.error)return showErr(d.error);last=d;render(d)}catch(e){showErr("Could not reach the server: "+e.message)}}
+$("sample").onclick=()=>go(fetch("/api/sample"+qs()));
+$("run").onclick=async()=>{const f=$("file").files[0];if(!f)return showErr("Choose a CSV file first.");
+ go(fetch("/api/screen"+qs(),{method:"POST",body:await f.text()}))};
+
+function groupItem(k){
+ const ms=k.members,dts=ms.map(m=>m.entry.posting_date).sort(),pp=[...new Set(ms.map(m=>m.entry.prepared_by+" → "+m.entry.approved_by))];
+ const seen={},tests=[];ms.forEach(m=>m.tests.forEach(t=>{if(!seen[t.id]){seen[t.id]=1;tests.push(t)}}));
+ return {isGroup:true,card:k,notice:null,score:k.score,line:ms.map(m=>m.line).join(", "),tests,
+  reasons:[...(k.bonus?[[k.bonus,0]]:[]),...ms[0].reasons.filter(r=>!/^Part of a pattern/.test(r[0]))],
+  entry:{je_id:(k.kind==="split"?"Possible split":"Possible duplicate")+" · "+ms.length+" entries",description:"Total of all "+ms.length+": "+ms.map(m=>m.entry.je_id).join(", "),
+   posting_date:dts[0]===dts.at(-1)?dts[0]:dts[0]+" → "+dts.at(-1),amount:k.total,prepared_by:pp.length===1?pp[0].split(" → ")[0]:"various",approved_by:pp.length===1?pp[0].split(" → ")[1]:"various"}}}
+function groupDetail(g){
+ const k=g.card,box=el("div","dg"),a=el("div");a.append(el("h4",null,"What fired, the entries involved, and the question to ask"));
+ g.tests.forEach(t=>{const x=el("div","tcard");x.dataset.t=t.id;
+  const h=el("div","th2");h.append(el("span","tb"+(t.kind==="exact"?"":" kw"),t.id),el("span","t",t.name),el("span","k",t.kind==="exact"?"exact rule":"keyword match: a person must read it"));
+  const tbl=el("table","mini"),hd=el("tr");["Entry","File line","Posted","Amount","Prepared → Approved","Description"].forEach(c=>hd.append(el("th",null,c)));tbl.append(hd);
+  k.members.forEach(m=>{const r=el("tr");[m.entry.je_id,m.line,m.entry.posting_date,num(m.entry.amount),m.entry.prepared_by+" → "+m.entry.approved_by,m.entry.description].forEach(c=>r.append(el("td",null,c)));tbl.append(r)});
+  x.append(h,el("div","lab","Evidence: the entries that belong together"),tbl,el("div","lab","Ask the client"),el("div","qa",k.question));a.append(x)});
+ const c=el("div");c.append(el("h4",null,"Why it ranks here (score "+k.score+")"));
+ const f=el("ul","facts");g.reasons.forEach(r=>f.append(el("li",null,r[0]+(r[1]?"  (+"+r[1]+" each entry)":"  (+"+(k.score-k.members[0].score)+" on the group)"))));c.append(f);
+ c.append(el("div","fine","Shown as one item because the entries belong together. Open any single entry in the file by its line number."));
+ box.append(a,c);return box}
+function detail(m){
+ if(m.isGroup)return groupDetail(m);
+ const e=m.entry,box=el("div","dg");
+ const a=el("div");a.append(el("h4",null,"Each test that fired: evidence and the question to ask"));
+ m.tests.forEach(t=>{const x=el("div","tcard");x.dataset.t=t.id;
+  const h=el("div","th2");h.append(el("span","tb"+(t.kind==="exact"?"":" kw"),t.id),el("span","t",t.name),el("span","k",t.kind==="exact"?"exact rule":"keyword match: a person must read it"));
+  x.append(h,el("div","lab","Evidence"),el("code",null,Object.entries(t.evidence).map(([k,v])=>k+" = "+v).join("   ")),el("div","lab","Ask the client"),el("div","qa",t.question));a.append(x)});
+ const c=el("div");c.append(el("h4",null,"Context"));
+ if(m.notice)c.append(el("div","warn","⚠ "+m.notice));
+ c.append(el("div","full","Description as recorded (untrusted text): "+e.description));
+ c.append(el("div","fine","Source: file line "+m.line+" · "+e.je_id+" · posted "+e.posting_date+" · keyed "+e.entry_date+" · Dr "+e.debit_account+" / Cr "+e.credit_account));
+ c.append(el("h4","gap","Why it ranks here (score "+m.score+")"));
+ const f=el("ul","facts");m.reasons.forEach(r=>f.append(el("li",null,r[0]+"  (+"+r[1]+")")));c.append(f);
+ box.append(a,c);return box}
+
+function render(d){
+ $("hint").hidden=true;$("out").hidden=false;$("exp").disabled=false;
+ const s=d.summary;$("kpis").replaceChildren();
+ [["Entries in file",s.total],["Manual entries tested",s.manualTested],["SYSTEM (not tested)",s.systemSkipped],["Entries flagged",s.entriesFlagged],["Items to review",s.cards]]
+  .forEach(([k,v])=>{const x=el("div","kpi");x.append(el("b",null,v),el("span",null,k));$("kpis").append(x)});
+ const st=$("start");st.replaceChildren(el("h2",null,"Start here: look at these first"));
+ (d.warnings||[]).forEach(w=>st.append(el("div","warnbox","⚠ "+w)));
+ const ol=el("ol");d.startHere.forEach(x=>ol.append(el("li",null,x)));st.append(ol);
+ st.append(el("div","fine","The tool flags and suggests; it does not conclude, clear or act. An entry with no flag is not cleared."));
+ const ch=el("div","chips");d.checks.forEach(x=>ch.append(el("span","chip"+(x.ok?"":" bad"),(x.ok?"✓ ":"✗ ")+x.label)));
+ ch.append(el("span","chip plain","Rule tests: run npm test"));st.append(ch);
+
+ const ij=$("inj");ij.hidden=!(d.injections&&d.injections.length);ij.replaceChildren();
+ if(!ij.hidden){ij.append(el("h2",null,"Text in the data that tried to give instructions ("+d.injections.length+")"));
+  ij.append(el("div","fine","Treated as data and ignored. It did not change any result. A person should read these entries."));
+  const u=el("ul");d.injections.forEach(x=>u.append(el("li",null,x.je_id+" (file line "+x.line+", "+x.source+"): \""+x.description+"\" — "+(x.flagged?"also flagged by a test: see the table below":"failed no test, so it is not in the ranked list"))));ij.append(u)}
+ const seg=$("seg");seg.replaceChildren();
+ ["All","High","Medium","Lower"].forEach(n=>{const cnt=n==="All"?d.cards.length:d.cards.filter(c=>c.priority===n).length;
+  const b=el("button",n===filt?"on":"",n+" ("+cnt+")");b.onclick=()=>{filt=n;render(d)};seg.append(b)});
+
+ const t=el("table"),th=el("thead"),hr=el("tr");
+ [["#"],["Priority"],["Entry"],["Date"],["Amount (INR)","r"],["Prepared → Approved"],["Tests failed"],[""]].forEach(([h,c])=>hr.append(el("th",c||"",h)));
+ th.append(hr);t.append(th);
+ const q=$("q").value.trim().toLowerCase();let shown=0;
+ d.cards.forEach((k,ci)=>{
+  const hay=k.members.map(m=>m.entry.je_id+" "+m.entry.description+" "+m.entry.prepared_by).join(" ").toLowerCase();
+  const tb=el("tbody");if((filt!=="All"&&k.priority!==filt)||(q&&!hay.includes(q)))tb.hidden=true;else shown++;
+  (k.members.length>1?[groupItem(k)]:k.members).forEach((m,i)=>{const e=m.entry,r=el("tr","row"),dt=el("tr","det");
+   const open=allOpen||(ci===0&&i===0&&!d._touched);dt.hidden=!open;if(open)r.classList.add("open");
+   r.append(el("td","num","#"+k.rank));
+   const p=el("td");p.append(el("span","pri "+k.priority,k.priority));r.append(p);
+   const en=el("td"),top=el("div");top.append(el("span","eid",e.je_id),el("span","line","line "+m.line));if(m.notice)top.append(el("span","warnicon","⚠ instruction in text"));
+   en.append(top,el("div","desc",e.description));r.append(en);
+   r.append(el("td","nw",e.posting_date),el("td","r nw",num(e.amount)),el("td","nw",e.prepared_by+" → "+e.approved_by));
+   const tt=el("td");m.tests.forEach(x=>{const b=el("span","tb"+(x.kind==="exact"?"":" kw"),x.id);b.title="Click to show the evidence and question for "+x.id+" – "+x.name;b.onclick=ev=>{ev.stopPropagation();d._touched=true;dt.hidden=false;r.classList.add("open");r.lastChild.textContent="▾";dt.querySelectorAll(".tcard").forEach(c=>{c.classList.toggle("hl",c.dataset.t===x.id);c.classList.toggle("dim",c.dataset.t!==x.id)});const hl=dt.querySelector(".tcard.hl");if(hl)hl.scrollIntoView({block:"nearest",behavior:"smooth"})};tt.append(b)});r.append(tt);
+   r.append(el("td","chev",open?"▾":"▸"));
+   const dtd=el("td");dtd.colSpan=8;dtd.append(detail(m));dt.append(dtd);
+   r.tabIndex=0;const flip=()=>{d._touched=true;dt.hidden=!dt.hidden;dt.querySelectorAll(".tcard").forEach(c=>c.classList.remove("hl","dim"));r.classList.toggle("open",!dt.hidden);r.lastChild.textContent=dt.hidden?"▸":"▾"};
+   r.onclick=flip;r.onkeydown=ev=>{if(ev.key==="Enter"||ev.key===" "){ev.preventDefault();flip()}};
+   tb.append(r,dt)});
+  t.append(tb)});
+ $("tbl").replaceChildren(t);if(!shown)$("tbl").append(el("div","panel empty","No items match this filter."));
+ const nt=$("nt");nt.replaceChildren(el("h2",null,"What this tool did NOT test, and what a person must still judge"));
+ const ul=el("ul");d.notTested.forEach(x=>ul.append(el("li",null,x)));nt.append(ul)}
+$("q").oninput=()=>last&&render(last);
+$("tog").onclick=()=>{allOpen=!allOpen;if(last)last._touched=true;$("tog").textContent=allOpen?"Collapse all":"Expand all";last&&render(last)};
+$("exp").onclick=()=>{const q=v=>'"'+String(v).replace(/"/g,'""')+'"';
+ const rows=[["rank","priority","je_id","file_line","amount","tests_failed","evidence","follow_up_questions"]];
+ last.cards.forEach(k=>k.members.forEach(m=>rows.push([k.rank,k.priority,m.entry.je_id,m.line,m.entry.amount,m.tests.map(t=>t.id).join(" "),m.tests.map(t=>Object.entries(t.evidence).map(([a,b])=>a+"="+b).join(";")).join(" | "),m.tests.map(t=>t.question).join(" | ")])));
+ const a=el("a");a.href=URL.createObjectURL(new Blob([rows.map(r=>r.map(q).join(",")).join("\n")],{type:"text/csv"}));a.download="journal-screening-results.csv";a.click()};
+if(location.hash==="#sample")$("sample").click();
+</script></html>

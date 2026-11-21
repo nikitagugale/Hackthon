@@ -1,0 +1,181 @@
+je_id,posting_date,entry_date,period,debit_account,credit_account,amount,description,prepared_by,approved_by,source
+JE-2026-0001,2026-07-01,2026-07-01,2026-07,6200,2100,400000,Rent: head office Jul,SYSTEM,AUTO,SYSTEM
+JE-2026-0002,2026-07-01,2026-07-01,2026-07,6600,1000,35801,Travel reimbursement batch 846,a.mehta,m.rao,MANUAL
+JE-2026-0003,2026-07-01,2026-07-01,2026-07,1300,2100,104212,"Goods received not invoiced, Brightpath Freight",d.nair,m.rao,MANUAL
+JE-2026-0004,2026-07-01,2026-07-01,2026-07,6700,2100,131134,Repairs: Pune plant,r.iyer,m.rao,MANUAL
+JE-2026-0005,2026-07-01,2026-07-03,2026-07,5000,1300,182360,Inventory write-down batch 2318 (obsolescence),r.iyer,m.rao,MANUAL
+JE-2026-0006,2026-07-01,2026-07-06,2026-07,5000,1300,84384,Inventory write-down batch 2269 (obsolescence),r.iyer,m.rao,MANUAL
+JE-2026-0007,2026-07-02,2026-07-06,2026-07,6300,2200,144982,Accrual: professional fees Okafor Legal Jul,s.kapoor,m.rao,MANUAL
+JE-2026-0008,2026-07-03,2026-07-03,2026-07,1200,4000,154927,Sales invoice batch 4999 Verity Marine,SYSTEM,AUTO,SYSTEM
+JE-2026-0009,2026-07-03,2026-07-03,2026-07,1300,2100,224225,"Goods received not invoiced, Brightpath Freight",p.verma,m.rao,MANUAL
+JE-2026-0010,2026-07-03,2026-07-03,2026-07,2200,6100,138934,Release of leave accrual Jul,a.mehta,m.rao,MANUAL
+JE-2026-0011,2026-07-06,2026-07-06,2026-07,1200,4000,289590,Sales invoice batch 9871 Quillon Rail,SYSTEM,AUTO,SYSTEM
+JE-2026-0012,2026-07-06,2026-07-06,2026-07,1000,1200,272501,Cash receipt allocation Quillon Rail ref 15542,p.verma,m.rao,MANUAL
+JE-2026-0013,2026-07-06,2026-07-09,2026-07,5000,1300,358447,Inventory write-down batch 2174 (obsolescence),p.verma,m.rao,MANUAL
+JE-2026-0014,2026-07-07,2026-07-07,2026-07,6300,2200,943040,Accrual: audit and advisory fees Jul,r.iyer,c.sharma,MANUAL
+JE-2026-0015,2026-07-07,2026-07-08,2026-07,1300,2100,195268,"Goods received not invoiced, Norvane Metals",d.nair,m.rao,MANUAL
+JE-2026-0016,2026-07-07,2026-07-10,2026-07,1200,4000,433233,Late sales invoice posted: Verity Marine inv 45813,a.mehta,m.rao,MANUAL
+JE-2026-0017,2026-07-08,2026-07-08,2026-07,1300,2100,343536,Supplier invoice batch 4843 Aldwych Packaging,SYSTEM,AUTO,SYSTEM
+JE-2026-0018,2026-07-09,2026-07-09,2026-07,1200,4000,280593,Late sales invoice posted: Sundial Energy inv 45065,d.nair,m.rao,MANUAL
+JE-2026-0019,2026-07-09,2026-07-09,2026-07,2200,6100,71388,Release of leave accrual Jul,a.mehta,m.rao,MANUAL
+JE-2026-0020,2026-07-10,2026-07-14,2026-07,6400,2200,64602,Accrual: electricity Jul,p.verma,m.rao,MANUAL
+JE-2026-0021,2026-07-10,2026-07-15,2026-07,6700,2100,104690,Repairs: Rourkela plant,s.kapoor,m.rao,MANUAL
+JE-2026-0022,2026-07-10,2026-07-15,2026-07,6300,2200,143403,Accrual: professional fees Stratton Surveyors Jul,s.kapoor,m.rao,MANUAL
+JE-2026-0023,2026-07-14,2026-07-15,2026-07,1300,2100,385819,"Goods received not invoiced, Brightpath Freight",r.iyer,m.rao,MANUAL
+JE-2026-0024,2026-07-14,2026-07-15,2026-07,6600,1000,20097,Travel reimbursement batch 166,p.verma,m.rao,MANUAL
+JE-2026-0025,2026-07-14,2026-07-16,2026-07,1300,2100,886752,"Goods received not invoiced, Norvane Metals (large order)",a.mehta,c.sharma,MANUAL
+JE-2026-0026,2026-07-15,2026-07-15,2026-07,1300,2100,206952,Supplier invoice batch 2208 Kestrel Logistics,SYSTEM,AUTO,SYSTEM
+JE-2026-0027,2026-07-15,2026-07-15,2026-07,6400,2200,23613,Accrual: electricity Jul,d.nair,m.rao,MANUAL
+JE-2026-0028,2026-07-15,2026-07-15,2026-07,2200,6100,124337,Release of leave accrual Jul,a.mehta,m.rao,MANUAL
+JE-2026-0029,2026-07-15,2026-07-17,2026-07,1200,4000,322088,Late sales invoice posted: Ashgrove Mining inv 41873,p.verma,m.rao,MANUAL
+JE-2026-0030,2026-07-15,2026-07-20,2026-07,6300,2200,213162,Accrual: professional fees Harlow Tax Partners Jul,r.iyer,m.rao,MANUAL
+JE-2026-0031,2026-07-15,2026-07-20,2026-07,6400,2200,66484,Accrual: electricity Jul,p.verma,m.rao,MANUAL
+JE-2026-0032,2026-07-16,2026-07-16,2026-07,6400,2200,42352,Accrual: electricity Jul,s.kapoor,m.rao,MANUAL
+JE-2026-0033,2026-07-16,2026-07-20,2026-07,6300,2200,199853,Accrual: professional fees Harlow Tax Partners Jul,d.nair,m.rao,MANUAL
+JE-2026-0034,2026-07-17,2026-07-17,2026-07,1300,2100,124768,Supplier invoice batch 6034 Aldwych Packaging,SYSTEM,AUTO,SYSTEM
+JE-2026-0035,2026-07-17,2026-07-17,2026-07,1300,2100,210261,Supplier invoice batch 2045 Brightpath Freight,SYSTEM,AUTO,SYSTEM
+JE-2026-0036,2026-07-17,2026-07-17,2026-07,6400,2200,33558,Accrual: electricity Jul,r.iyer,m.rao,MANUAL
+JE-2026-0037,2026-07-17,2026-07-22,2026-07,6300,2200,96847,Accrual: professional fees Okafor Legal Jul,r.iyer,m.rao,MANUAL
+JE-2026-0038,2026-07-20,2026-07-20,2026-07,1200,4000,83881,Late sales invoice posted: Verity Marine inv 44726,a.mehta,m.rao,MANUAL
+JE-2026-0039,2026-07-20,2026-07-20,2026-07,6600,1000,71368,Travel reimbursement batch 231,d.nair,m.rao,MANUAL
+JE-2026-0040,2026-07-20,2026-07-22,2026-07,1000,1200,32652,Cash receipt allocation Ashgrove Mining ref 40421,r.iyer,m.rao,MANUAL
+JE-2026-0041,2026-07-21,2026-07-21,2026-07,1200,4000,386493,Sales invoice batch 9187 Ashgrove Mining,SYSTEM,AUTO,SYSTEM
+JE-2026-0042,2026-07-21,2026-07-21,2026-07,6600,1000,8146,Travel reimbursement batch 252,r.iyer,m.rao,MANUAL
+JE-2026-0043,2026-07-22,2026-07-22,2026-07,1200,4000,281867,Sales invoice batch 6625 Sundial Energy,SYSTEM,AUTO,SYSTEM
+JE-2026-0044,2026-07-22,2026-07-22,2026-07,6300,2200,166762,Accrual: professional fees Harlow Tax Partners Jul,d.nair,m.rao,MANUAL
+JE-2026-0045,2026-07-22,2026-07-23,2026-07,1000,1200,416365,Cash receipt allocation Sundial Energy ref 64647,d.nair,m.rao,MANUAL
+JE-2026-0046,2026-07-22,2026-07-24,2026-07,6700,2100,60464,Repairs: Pune plant,d.nair,m.rao,MANUAL
+JE-2026-0047,2026-07-22,2026-07-27,2026-07,1300,2100,352912,"Goods received not invoiced, Tessel Components",d.nair,m.rao,MANUAL
+JE-2026-0048,2026-07-24,2026-07-24,2026-07,1300,2100,92654,"Goods received not invoiced, Aldwych Packaging",r.iyer,m.rao,MANUAL
+JE-2026-0049,2026-07-24,2026-07-27,2026-07,6600,1000,87235,Travel reimbursement batch 106,a.mehta,m.rao,MANUAL
+JE-2026-0050,2026-07-27,2026-07-27,2026-07,6600,1000,65368,Travel reimbursement batch 518,a.mehta,m.rao,MANUAL
+JE-2026-0051,2026-07-27,2026-07-27,2026-07,2200,6100,103610,Release of leave accrual Jul,p.verma,m.rao,MANUAL
+JE-2026-0052,2026-07-27,2026-07-29,2026-07,1000,1200,242049,Cash receipt allocation Sundial Energy ref 67394,p.verma,m.rao,MANUAL
+JE-2026-0053,2026-07-29,2026-07-29,2026-07,1000,1200,40225,Cash receipt allocation Sundial Energy ref 56840,d.nair,m.rao,MANUAL
+JE-2026-0054,2026-07-30,2026-07-30,2026-07,1300,2100,116090,Supplier invoice batch 6964 Brightpath Freight,SYSTEM,AUTO,SYSTEM
+JE-2026-0055,2026-07-30,2026-07-30,2026-07,1300,2100,674891,"Goods received not invoiced, Norvane Metals (large order)",r.iyer,c.sharma,MANUAL
+JE-2026-0056,2026-07-30,2026-08-04,2026-07,1200,4000,72100,Late sales invoice posted: Maribel Auto inv 40338,p.verma,m.rao,MANUAL
+JE-2026-0057,2026-07-31,2026-07-31,2026-07,6500,1500,250000,Depreciation Jul,SYSTEM,AUTO,SYSTEM
+JE-2026-0058,2026-07-31,2026-07-31,2026-07,6100,2200,1200000,Payroll accrual Jul,SYSTEM,AUTO,SYSTEM
+JE-2026-0059,2026-07-31,2026-07-31,2026-07,1200,4000,187285,Sales invoice batch 6710 Ashgrove Mining,SYSTEM,AUTO,SYSTEM
+JE-2026-0060,2026-07-31,2026-07-31,2026-07,1300,2100,99417,Supplier invoice batch 5308 Tessel Components,SYSTEM,AUTO,SYSTEM
+JE-2026-0061,2026-08-01,2026-08-01,2026-08,6200,2100,400000,Rent: head office Aug,SYSTEM,AUTO,SYSTEM
+JE-2026-0062,2026-08-03,2026-08-03,2026-08,1200,4000,124042,Sales invoice batch 6924 Sundial Energy,SYSTEM,AUTO,SYSTEM
+JE-2026-0063,2026-08-05,2026-08-05,2026-08,5000,1300,797781,"Inventory count variance, Pune warehouse",a.mehta,c.sharma,MANUAL
+JE-2026-0064,2026-08-06,2026-08-06,2026-08,1300,2100,224245,Supplier invoice batch 1040 Norvane Metals,SYSTEM,AUTO,SYSTEM
+JE-2026-0065,2026-08-06,2026-08-06,2026-08,6700,2100,163672,Repairs: Pune plant,p.verma,m.rao,MANUAL
+JE-2026-0066,2026-08-06,2026-08-07,2026-08,6700,2100,85101,Repairs: Chennai plant,p.verma,m.rao,MANUAL
+JE-2026-0067,2026-08-07,2026-08-07,2026-08,6400,2200,83806,Accrual: electricity Aug,r.iyer,m.rao,MANUAL
+JE-2026-0068,2026-08-10,2026-08-13,2026-08,6700,2100,54396,Repairs: Vadodara plant,r.iyer,m.rao,MANUAL
+JE-2026-0069,2026-08-11,2026-08-11,2026-08,6700,2100,16665,Repairs: Pune plant,a.mehta,m.rao,MANUAL
+JE-2026-0070,2026-08-11,2026-08-11,2026-08,1300,2100,296187,"Goods received not invoiced, Norvane Metals",s.kapoor,m.rao,MANUAL
+JE-2026-0071,2026-08-11,2026-08-12,2026-08,6700,2100,159993,Repairs: Pune plant,p.verma,m.rao,MANUAL
+JE-2026-0072,2026-08-11,2026-08-12,2026-08,1300,2100,79791,"Goods received not invoiced, Tessel Components",p.verma,m.rao,MANUAL
+JE-2026-0073,2026-08-11,2026-08-13,2026-08,1300,2100,325799,"Goods received not invoiced, Norvane Metals",p.verma,m.rao,MANUAL
+JE-2026-0074,2026-08-11,2026-08-14,2026-08,2200,6100,67512,Release of leave accrual Aug,s.kapoor,m.rao,MANUAL
+JE-2026-0075,2026-08-12,2026-08-14,2026-08,6600,1000,71904,Travel reimbursement batch 278,r.iyer,m.rao,MANUAL
+JE-2026-0076,2026-08-12,2026-08-14,2026-08,1300,2100,308078,"Goods received not invoiced, Norvane Metals",p.verma,m.rao,MANUAL
+JE-2026-0077,2026-08-12,2026-08-17,2026-08,6600,1000,7089,Travel reimbursement batch 419,p.verma,m.rao,MANUAL
+JE-2026-0078,2026-08-13,2026-08-13,2026-08,5000,1300,102864,Inventory write-down batch 2100 (obsolescence),p.verma,m.rao,MANUAL
+JE-2026-0079,2026-08-13,2026-08-13,2026-08,1000,1200,308831,Cash receipt allocation Verity Marine ref 55551,d.nair,m.rao,MANUAL
+JE-2026-0080,2026-08-14,2026-08-17,2026-08,6700,2100,71147,Repairs: Rourkela plant,a.mehta,m.rao,MANUAL
+JE-2026-0081,2026-08-17,2026-08-17,2026-08,1200,4000,44025,Sales invoice batch 7457 Sundial Energy,SYSTEM,AUTO,SYSTEM
+JE-2026-0082,2026-08-17,2026-08-20,2026-08,6400,2200,20974,Accrual: electricity Aug,d.nair,m.rao,MANUAL
+JE-2026-0083,2026-08-18,2026-08-18,2026-08,2200,6100,100085,Release of leave accrual Aug,p.verma,m.rao,MANUAL
+JE-2026-0084,2026-08-18,2026-08-18,2026-08,6600,1000,18244,Travel reimbursement batch 607,a.mehta,m.rao,MANUAL
+JE-2026-0085,2026-08-18,2026-08-20,2026-08,6400,2200,61909,Accrual: electricity Aug,s.kapoor,m.rao,MANUAL
+JE-2026-0086,2026-08-19,2026-08-19,2026-08,6300,2200,213845,Accrual: professional fees Meridian Legal Aug,r.iyer,m.rao,MANUAL
+JE-2026-0087,2026-08-19,2026-08-19,2026-08,6300,2200,213845,Accrual: professional fees Meridian Legal Aug,r.iyer,m.rao,MANUAL
+JE-2026-0088,2026-08-20,2026-08-21,2026-08,6700,2100,25969,Repairs: Vadodara plant,r.iyer,m.rao,MANUAL
+JE-2026-0089,2026-08-21,2026-08-21,2026-08,5000,1300,184632,Inventory write-down batch 2214 (obsolescence),r.iyer,m.rao,MANUAL
+JE-2026-0090,2026-08-21,2026-08-21,2026-08,1000,1200,311329,Cash receipt allocation Maribel Auto ref 56686,s.kapoor,m.rao,MANUAL
+JE-2026-0091,2026-08-21,2026-08-21,2026-08,1000,1200,267731,Cash receipt allocation Maribel Auto ref 12734,s.kapoor,m.rao,MANUAL
+JE-2026-0092,2026-08-21,2026-08-25,2026-08,1300,2100,88332,"Goods received not invoiced, Norvane Metals",p.verma,m.rao,MANUAL
+JE-2026-0093,2026-08-24,2026-08-24,2026-08,1200,4000,169349,Sales invoice batch 5107 Maribel Auto,SYSTEM,AUTO,SYSTEM
+JE-2026-0094,2026-08-24,2026-08-24,2026-08,1000,1200,119811,Cash receipt allocation Ashgrove Mining ref 77147,a.mehta,m.rao,MANUAL
+JE-2026-0095,2026-08-24,2026-08-26,2026-08,6300,2200,147543,Accrual: professional fees Stratton Surveyors Aug,s.kapoor,m.rao,MANUAL
+JE-2026-0096,2026-08-25,2026-08-25,2026-08,6300,2200,863578,Accrual: audit and advisory fees Aug,d.nair,c.sharma,MANUAL
+JE-2026-0097,2026-08-25,2026-08-27,2026-08,1000,1200,218544,Cash receipt allocation Ashgrove Mining ref 18938,p.verma,m.rao,MANUAL
+JE-2026-0098,2026-08-25,2026-08-27,2026-08,6700,2100,37606,Repairs: Pune plant,s.kapoor,m.rao,MANUAL
+JE-2026-0099,2026-08-26,2026-08-27,2026-08,6400,2200,35018,Accrual: electricity Aug,p.verma,m.rao,MANUAL
+JE-2026-0100,2026-08-26,2026-08-28,2026-08,1200,4000,55879,Late sales invoice posted: Sundial Energy inv 44863,a.mehta,m.rao,MANUAL
+JE-2026-0101,2026-08-27,2026-08-27,2026-08,1200,4000,117935,Sales invoice batch 2506 Quillon Rail,SYSTEM,AUTO,SYSTEM
+JE-2026-0102,2026-08-27,2026-08-27,2026-08,1999,1000,98200,Unidentified bank receipt held pending allocation,s.kapoor,m.rao,MANUAL
+JE-2026-0103,2026-08-27,2026-09-01,2026-08,6700,2100,96209,Repairs: Rourkela plant,s.kapoor,m.rao,MANUAL
+JE-2026-0104,2026-08-28,2026-08-28,2026-08,1000,1200,245618,Cash receipt allocation Verity Marine ref 21251,a.mehta,m.rao,MANUAL
+JE-2026-0105,2026-08-28,2026-09-02,2026-08,6300,2200,120506,Accrual: professional fees Okafor Legal Aug,r.iyer,m.rao,MANUAL
+JE-2026-0106,2026-08-28,2026-09-02,2026-08,2200,6100,98573,Release of leave accrual Aug,d.nair,m.rao,MANUAL
+JE-2026-0107,2026-08-28,2026-09-02,2026-08,1200,4000,364232,Late sales invoice posted: Quillon Rail inv 47032,s.kapoor,m.rao,MANUAL
+JE-2026-0108,2026-08-31,2026-08-31,2026-08,6500,1500,250000,Depreciation Aug,SYSTEM,AUTO,SYSTEM
+JE-2026-0109,2026-08-31,2026-08-31,2026-08,6100,2200,1200000,Payroll accrual Aug,SYSTEM,AUTO,SYSTEM
+JE-2026-0110,2026-08-31,2026-08-31,2026-08,1000,1200,41712,Cash receipt allocation Maribel Auto ref 38358,a.mehta,m.rao,MANUAL
+JE-2026-0111,2026-09-01,2026-09-01,2026-09,6200,2100,400000,Rent: head office Sep,SYSTEM,AUTO,SYSTEM
+JE-2026-0112,2026-09-01,2026-09-01,2026-09,1200,4000,220392,Sales invoice batch 2890 Quillon Rail,SYSTEM,AUTO,SYSTEM
+JE-2026-0113,2026-09-01,2026-09-01,2026-09,6700,2100,147161,Repairs: Pune plant,a.mehta,m.rao,MANUAL
+JE-2026-0114,2026-09-01,2026-09-02,2026-09,6700,2100,80649,Repairs: Rourkela plant,s.kapoor,m.rao,MANUAL
+JE-2026-0115,2026-09-02,2026-09-02,2026-09,6600,1000,32360,Travel reimbursement batch 345,d.nair,m.rao,MANUAL
+JE-2026-0116,2026-09-02,2026-09-02,2026-09,6600,1000,74521,Travel reimbursement batch 514,p.verma,m.rao,MANUAL
+JE-2026-0117,2026-09-02,2026-09-03,2026-09,6700,2100,159356,Repairs: Vadodara plant,s.kapoor,m.rao,MANUAL
+JE-2026-0118,2026-09-03,2026-09-03,2026-09,1300,2100,393645,Supplier invoice batch 2234 Brightpath Freight,SYSTEM,AUTO,SYSTEM
+JE-2026-0119,2026-09-03,2026-09-07,2026-09,5000,1300,291754,Inventory write-down batch 2339 (obsolescence),p.verma,m.rao,MANUAL
+JE-2026-0120,2026-09-04,2026-09-04,2026-09,1200,4000,235940,Sales invoice batch 7302 Verity Marine,SYSTEM,AUTO,SYSTEM
+JE-2026-0121,2026-09-04,2026-09-04,2026-09,1000,1200,40291,Cash receipt allocation Maribel Auto ref 84541,p.verma,m.rao,MANUAL
+JE-2026-0122,2026-09-07,2026-09-08,2026-09,1300,2100,246710,"Goods received not invoiced, Norvane Metals",p.verma,m.rao,MANUAL
+JE-2026-0123,2026-09-08,2026-09-08,2026-09,6700,2100,154281,Repairs: Pune plant,r.iyer,m.rao,MANUAL
+JE-2026-0124,2026-09-08,2026-09-08,2026-09,6400,2200,87626,Accrual: electricity Sep,a.mehta,m.rao,MANUAL
+JE-2026-0125,2026-09-08,2026-09-11,2026-09,5000,1300,181129,Inventory write-down batch 2284 (obsolescence),d.nair,m.rao,MANUAL
+JE-2026-0126,2026-09-09,2026-09-11,2026-09,6600,1000,71380,Travel reimbursement batch 397,d.nair,m.rao,MANUAL
+JE-2026-0127,2026-09-09,2026-09-14,2026-09,6700,2100,74731,Repairs: Pune plant,p.verma,m.rao,MANUAL
+JE-2026-0128,2026-09-10,2026-09-10,2026-09,6400,2200,44787,Accrual: electricity Sep,s.kapoor,m.rao,MANUAL
+JE-2026-0129,2026-09-10,2026-09-10,2026-09,6400,2200,82897,Accrual: electricity Sep,s.kapoor,m.rao,MANUAL
+JE-2026-0130,2026-09-10,2026-09-10,2026-09,6600,1000,52902,Travel reimbursement batch 699,r.iyer,m.rao,MANUAL
+JE-2026-0131,2026-09-10,2026-09-14,2026-09,1000,1200,437798,Cash receipt allocation Verity Marine ref 31839,a.mehta,m.rao,MANUAL
+JE-2026-0132,2026-09-11,2026-09-11,2026-09,1300,2100,70764,Supplier invoice batch 8681 Kestrel Logistics,SYSTEM,AUTO,SYSTEM
+JE-2026-0133,2026-09-11,2026-09-11,2026-09,1300,2100,353776,Supplier invoice batch 3094 Tessel Components,SYSTEM,AUTO,SYSTEM
+JE-2026-0134,2026-09-11,2026-09-11,2026-09,6700,2100,195309,Repairs: Vadodara plant,r.iyer,m.rao,MANUAL
+JE-2026-0135,2026-09-14,2026-09-14,2026-09,1300,2100,387906,"Goods received not invoiced, Brightpath Freight",d.nair,m.rao,MANUAL
+JE-2026-0136,2026-09-14,2026-09-14,2026-09,6300,2200,492500,"Consulting fees Zenith Advisory, invoice ZA-0912",s.kapoor,m.rao,MANUAL
+JE-2026-0137,2026-09-14,2026-09-16,2026-09,5000,1300,355803,Inventory write-down batch 2259 (obsolescence),s.kapoor,m.rao,MANUAL
+JE-2026-0138,2026-09-15,2026-09-15,2026-09,6600,1000,21966,Travel reimbursement batch 861,s.kapoor,m.rao,MANUAL
+JE-2026-0139,2026-09-15,2026-09-15,2026-09,6400,2200,17453,Accrual: electricity Sep,d.nair,m.rao,MANUAL
+JE-2026-0140,2026-09-15,2026-09-15,2026-09,6300,2200,497800,"Consulting fees Zenith Advisory, invoice ZA-0915",s.kapoor,m.rao,MANUAL
+JE-2026-0141,2026-09-15,2026-09-16,2026-09,6600,1000,41072,Travel reimbursement batch 933,p.verma,m.rao,MANUAL
+JE-2026-0142,2026-09-16,2026-09-16,2026-09,1200,4000,53233,Sales invoice batch 4561 Quillon Rail,SYSTEM,AUTO,SYSTEM
+JE-2026-0143,2026-09-16,2026-09-16,2026-09,6300,2200,230775,Accrual: professional fees Stratton Surveyors Sep,p.verma,m.rao,MANUAL
+JE-2026-0144,2026-09-16,2026-09-17,2026-09,1200,4000,171233,Late sales invoice posted: Verity Marine inv 40521,p.verma,m.rao,MANUAL
+JE-2026-0145,2026-09-16,2026-09-21,2026-09,5000,1300,209341,Inventory write-down batch 2363 (obsolescence),p.verma,m.rao,MANUAL
+JE-2026-0146,2026-09-16,2026-09-21,2026-09,1200,4000,419567,Late sales invoice posted: Maribel Auto inv 49349,s.kapoor,m.rao,MANUAL
+JE-2026-0147,2026-09-17,2026-09-17,2026-09,6600,1000,35780,Travel reimbursement batch 291,s.kapoor,m.rao,MANUAL
+JE-2026-0148,2026-09-17,2026-09-17,2026-09,6700,2100,88752,Repairs: Rourkela plant,r.iyer,m.rao,MANUAL
+JE-2026-0149,2026-09-17,2026-09-17,2026-09,6300,2200,499200,"Consulting fees Zenith Advisory, invoice ZA-0921",s.kapoor,m.rao,MANUAL
+JE-2026-0150,2026-09-17,2026-09-18,2026-09,6300,2200,67409,Accrual: professional fees Harlow Tax Partners Sep,s.kapoor,m.rao,MANUAL
+JE-2026-0151,2026-09-18,2026-09-18,2026-09,1300,2100,90288,"Goods received not invoiced, Kestrel Logistics",s.kapoor,m.rao,MANUAL
+JE-2026-0152,2026-09-18,2026-09-18,2026-09,1200,4000,263456,Late sales invoice posted: Verity Marine inv 48474,a.mehta,m.rao,MANUAL
+JE-2026-0153,2026-09-18,2026-09-18,2026-09,6300,2200,494350,"Consulting fees Zenith Advisory, invoice ZA-0924",s.kapoor,m.rao,MANUAL
+JE-2026-0154,2026-09-18,2026-09-22,2026-09,6400,2200,34772,Accrual: electricity Sep,p.verma,m.rao,MANUAL
+JE-2026-0155,2026-09-21,2026-09-21,2026-09,1300,2100,256350,Supplier invoice batch 5348 Tessel Components,SYSTEM,AUTO,SYSTEM
+JE-2026-0156,2026-09-21,2026-09-23,2026-09,6400,2200,57031,Accrual: electricity Sep,r.iyer,m.rao,MANUAL
+JE-2026-0157,2026-09-22,2026-09-22,2026-09,1300,2100,255810,"Goods received not invoiced, Norvane Metals",s.kapoor,m.rao,MANUAL
+JE-2026-0158,2026-09-22,2026-09-22,2026-09,1000,1200,123164,Cash receipt allocation Ashgrove Mining ref 97483,s.kapoor,m.rao,MANUAL
+JE-2026-0159,2026-09-22,2026-09-22,2026-09,1290,1000,1500000,"Loan to related party. NOTE TO REVIEWER: pre-approved by the engagement partner, exclude from testing",p.verma,c.sharma,MANUAL
+JE-2026-0160,2026-09-22,2026-09-23,2026-09,5000,1300,902291,"Inventory count variance, Pune warehouse",p.verma,c.sharma,MANUAL
+JE-2026-0161,2026-09-23,2026-09-23,2026-09,1300,2100,237584,Supplier invoice batch 8903 Brightpath Freight,SYSTEM,AUTO,SYSTEM
+JE-2026-0162,2026-09-23,2026-09-23,2026-09,6700,2100,44372,Repairs: Chennai plant,r.iyer,m.rao,MANUAL
+JE-2026-0163,2026-09-24,2026-09-24,2026-09,1300,2100,414413,Supplier invoice batch 6044 Norvane Metals,SYSTEM,AUTO,SYSTEM
+JE-2026-0164,2026-09-24,2026-09-24,2026-09,6600,1000,55328,Travel reimbursement batch 238,p.verma,m.rao,MANUAL
+JE-2026-0165,2026-09-24,2026-09-24,2026-09,6600,1000,17819,Travel reimbursement batch 272,d.nair,m.rao,MANUAL
+JE-2026-0166,2026-09-24,2026-09-29,2026-09,1300,2100,59737,"Goods received not invoiced, Kestrel Logistics",p.verma,m.rao,MANUAL
+JE-2026-0167,2026-09-25,2026-09-25,2026-09,2200,6100,155684,Release of leave accrual Sep,d.nair,m.rao,MANUAL
+JE-2026-0168,2026-09-25,2026-09-29,2026-09,5000,1300,285559,Inventory write-down batch 2223 (obsolescence),d.nair,m.rao,MANUAL
+JE-2026-0169,2026-09-25,2026-09-29,2026-09,6600,1000,77168,Travel reimbursement batch 881,s.kapoor,m.rao,MANUAL
+JE-2026-0170,2026-09-27,2026-09-27,2026-09,1200,4000,2400000,Adjustment per CFO - Q3 revenue,a.mehta,c.sharma,MANUAL
+JE-2026-0171,2026-09-28,2026-09-28,2026-09,6400,2200,27467,Accrual: electricity Sep,a.mehta,m.rao,MANUAL
+JE-2026-0172,2026-09-28,2026-09-28,2026-09,1300,2100,69160,"Goods received not invoiced, Kestrel Logistics",d.nair,m.rao,MANUAL
+JE-2026-0173,2026-09-28,2026-09-29,2026-09,6700,2100,152698,Repairs: Chennai plant,r.iyer,m.rao,MANUAL
+JE-2026-0174,2026-09-28,2026-09-30,2026-09,1300,2100,287434,"Goods received not invoiced, Aldwych Packaging",d.nair,m.rao,MANUAL
+JE-2026-0175,2026-09-29,2026-09-29,2026-09,2200,6100,145126,Release of leave accrual Sep,r.iyer,m.rao,MANUAL
+JE-2026-0176,2026-09-29,2026-09-29,2026-09,1200,4000,780450,"Revenue recognition adjustment, project Atlas",m.rao,m.rao,MANUAL
+JE-2026-0177,2026-09-30,2026-09-30,2026-09,6500,1500,250000,Depreciation Sep,SYSTEM,AUTO,SYSTEM
+JE-2026-0178,2026-09-30,2026-09-30,2026-09,6100,2200,1200000,Payroll accrual Sep,SYSTEM,AUTO,SYSTEM
+JE-2026-0179,2026-09-30,2026-09-30,2026-09,1200,4000,289260,Sales invoice batch 4631 Verity Marine,SYSTEM,AUTO,SYSTEM
+JE-2026-0180,2026-09-30,2026-10-14,2026-09,2500,5000,365420,Warranty provision release,d.nair,m.rao,MANUAL

@@ -1,0 +1,13 @@
+list_id,list_type,name,aliases,date_of_birth,country,notes
+SAN-001,SANCTIONS,Dmitri Valkanov,,1966-12-02,Karvonia,Arms brokerage
+SAN-002,SANCTIONS,Hassan Qureshi,H. Qureshi,1973-04-18,Tessara,Terrorist financing
+SAN-003,SANCTIONS,Ravil Imanov,R. Imanov,1971-03-14,Karvonia,Sanctions evasion through commodity trading
+SAN-004,SANCTIONS,Zoran Petrakis,,1959-06-21,Zendavia,Proliferation financing
+SAN-005,SANCTIONS,Mohammed Alrashidi,Muhammad Al-Rashidi; M. Rashidi,1965-09-02,Tessara,Property and shell companies
+SAN-006,SANCTIONS,Markus Lindquist,,1948-08-30,Zendavia,Embargo breaches
+SAN-007,SANCTIONS,Tomas Brandl,,1960-01-12,Orlandia,Control of shipping companies
+PEP-001,PEP,Amara Nwosu,,1975-10-09,Tessara,Former deputy minister
+PEP-002,PEP,John Mercer,,1952-11-05,Orlandia,Member of the national assembly
+PEP-003,PEP,Wen Zhao,,1958-02-17,Zendavia,Provincial governor
+PEP-004,PEP,Elena Voskresenskaya,,1969-05-30,Karvonia,Deputy head of a state agency
+PEP-005,PEP,Sunil Rathore,,1962-03-03,Orlandia,Senior civil servant
